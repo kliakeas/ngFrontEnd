@@ -1,0 +1,32 @@
+POST http://91.194.90.29:8008/api/v1/accounts/transfer
+Content-Type: application/json; charset=utf-8
+
+{
+    "Sender": "0x9bf54b7746b7aa37107066586813f41c950779d6",
+    "Receiver": "0x10BfCB0883a9bC56A9C3b3b817ff4e289Dbb6e42",
+    "Amount": 1.99
+}
+
+###
+
+GET http://91.194.90.29:8008/api/v1/accounts
+
+###
+
+GET http://91.194.90.29:8008/api/v1/accounts/0xcc60272c99cf8c065ca63ccb818dbbce49f1d7bd/balance
+
+###
+
+GET http://91.194.90.29:8008/api/v1/accounts/0x3e7cd9306ab55143f31a8c59f91556cb0d8da253/balance
+
+###
+
+GET http://91.194.90.29:8008/api/v1/accounts/0x10BfCB0883a9bC56A9C3b3b817ff4e289Dbb6e42/balance
+POST http://91.194.90.29:8008/api/v1/accounts/transfer
+Content-Type: application/json; charset=utf-8
+
+{
+    "Sender": "0xcc60272c99cf8c065ca63ccb818dbbce49f1d7bd",
+    "Receiver": "0x10BfCB0883a9bC56A9C3b3b817ff4e289Dbb6e42",
+    "Amount": 1.99
+}

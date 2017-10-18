@@ -1,0 +1,61 @@
+
+<br />
+
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Blue node</h3>
+    </div>
+
+
+    <div class="panel-body">
+      
+      <div class="form-group-lg">
+        <label for="balance" class="col-sm-3 control-label"> Ether Balance:</label>
+        <div class="col-sm-7">
+          <input [ngModel] = "balance" class="form-control" readonly>
+        </div>
+      </div>
+      
+      <br />
+      <br />
+      <br />
+
+      <form #form="ngForm" (ngSubmit)="transfer()"> 
+        
+               <div class="form-group-lg">
+        
+                 <label for="amount" class="col-sm-3 control-label">Ether to Transfer to Green:</label>
+        
+                 <div class="col-sm-7">
+                   <input [(ngModel)] = amount name="amount" type="number" id="amount" 
+                            class="form-control" required="required" placeholder="Ether to transfer">
+                 </div>
+        
+               </div>
+        
+               <br />
+               <br />
+               <br />
+
+               <div class="form-group-sm col-sm-offset-3 col-sm-2">
+                 <button type="submit" class="btn btn-lg btn-success ">Transfer</button>
+               </div>
+       
+      </form>
+      
+      <br />
+      <br />
+      <br />
+
+      <div class="form-group-lg">
+        <label class="col-sm-3 control-label"> Tx Hash:</label>
+        <div class="col-sm-9">
+          <input [ngModel] = "hash" class="form-control" readonly>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
